@@ -1,0 +1,6 @@
+language: java
+after_success:
+  - mvn jxr:jxr checkstyle:checkstyle -Dcheckstyle.config.location=my_checks.xml
+  - mvn integration-test
+
+
