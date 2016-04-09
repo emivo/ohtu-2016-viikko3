@@ -1,55 +1,53 @@
-<easyb time='Sun Apr 10 01:35:31 EEST 2016' totalbehaviors='10' totalfailedbehaviors='1' totalpendingbehaviors='0' executionTime='1056'>
-  <stories scenarios='10' failedscenarios='1' pendingscenarios='0' executionTime='1056'>
-    <story name='logging_in' scenarios='3' failedscenarios='1' pendingscenarios='0' executionTime='795'>
+<easyb time='Sun Apr 10 01:41:05 EEST 2016' totalbehaviors='10' totalfailedbehaviors='0' totalpendingbehaviors='0' executionTime='1150'>
+  <stories scenarios='10' failedscenarios='0' pendingscenarios='0' executionTime='1150'>
+    <story name='logging_in' scenarios='3' failedscenarios='0' pendingscenarios='0' executionTime='755'>
       <description name='User can log in with valid username/password-combination' />
-      <scenario name='user can login with correct password' result='success' executionTime='74'>
+      <scenario name='user can login with correct password' result='success' executionTime='95'>
         <given name='command login selected' result='success' />
         <when name='a valid username and password are entered' result='success' />
         <then name='user will be logged in to system' result='success' />
       </scenario>
-      <scenario name='user can not login with incorrect password' result='failure' executionTime='24'>
+      <scenario name='user can not login with incorrect password' result='success' executionTime='21'>
         <given name='command login selected' result='success' />
         <when name='a valid username and incorrect password are entered' result='success' />
-        <then name='user will not be logged in to system' result='failure'>
-          <failure message='[&gt;, username:, password:, wrong username or password, &gt;] doesn&apos;t contain wrong username odr password' />
-        </then>
+        <then name='user will not be logged in to system' result='success' />
       </scenario>
-      <scenario name='nonexistent user can not login to ' result='success' executionTime='5'>
+      <scenario name='nonexistent user can not login to ' result='success' executionTime='12'>
         <given name='command login selected' result='success' />
         <when name='a nonexistent username and some password are entered' result='success' />
         <then name='user will not be logged in to system' result='success' />
       </scenario>
     </story>
-    <story name='new_user_creation' scenarios='7' failedscenarios='0' pendingscenarios='0' executionTime='261'>
+    <story name='new_user_creation' scenarios='7' failedscenarios='0' pendingscenarios='0' executionTime='395'>
       <description name='A new user account can be created 
               if a proper unused username 
               and a proper password are given' />
-      <scenario name='creation succesfull with correct username and password' result='success' executionTime='6'>
+      <scenario name='creation succesfull with correct username and password' result='success' executionTime='10'>
         <given name='command new user is selected' result='success' />
         <when name='a valid username and password are entered' result='success' />
         <then name='new user is registered to system' result='success' />
       </scenario>
-      <scenario name='can login with succesfully generated account' result='success' executionTime='4'>
+      <scenario name='can login with succesfully generated account' result='success' executionTime='7'>
         <given name='command new user is selected' result='success' />
         <when name='a valid username and password are entered' result='success' />
         <then name='new credentials allow logging in to system' result='success' />
       </scenario>
-      <scenario name='creation fails with correct username and too short password' result='success' executionTime='5'>
+      <scenario name='creation fails with correct username and too short password' result='success' executionTime='13'>
         <given name='command new user is selected' result='success' />
         <when name='a valid username and too short password are entered' result='success' />
         <then name='new user is not be registered to system' result='success' />
       </scenario>
-      <scenario name='creation fails with correct username and pasword consisting of letters' result='success' executionTime='6'>
+      <scenario name='creation fails with correct username and pasword consisting of letters' result='success' executionTime='17'>
         <given name='command new user is selected' result='success' />
         <when name='a valid username and password consisting of letters are entered' result='success' />
         <then name='new user is not be registered to system' result='success' />
       </scenario>
-      <scenario name='creation fails with too short username and valid pasword' result='success' executionTime='12'>
+      <scenario name='creation fails with too short username and valid pasword' result='success' executionTime='13'>
         <given name='command new user is selected' result='success' />
         <when name='a too sort username and valid password are entered' result='success' />
         <then name='new user is not be registered to system' result='success' />
       </scenario>
-      <scenario name='creation fails with already taken username and valid pasword' result='success' executionTime='8'>
+      <scenario name='creation fails with already taken username and valid pasword' result='success' executionTime='9'>
         <given name='command new user is selected' result='success' />
         <when name='a already taken username and valid password are entered' result='success' />
         <then name='new user is not be registered to system' result='success' />

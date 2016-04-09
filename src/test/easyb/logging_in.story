@@ -33,7 +33,7 @@ scenario "user can not login with incorrect password", {
         app.run()
     }
     then 'user will not be logged in to system', {
-        io.getPrints().shouldHave("wrong username odr password")
+        io.getPrints().shouldHave("wrong username or password")
     }
 }
 
