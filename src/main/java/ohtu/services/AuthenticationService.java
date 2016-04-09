@@ -71,8 +71,17 @@ public class AuthenticationService {
         return false;
     }
 
-    private boolean checkSingleChar(String username, int i) {
-        if (username.charAt(i) < 97 && username.charAt(i) > 122) {
+    private boolean checkSingleChar(String username, int i)
+
+
+
+
+
+
+
+
+    {
+                                                                                                                                                                                                                                                                    if (username.charAt(i) < 97 && username.charAt(i) > 122) {
             return true;
         }
         return false;
