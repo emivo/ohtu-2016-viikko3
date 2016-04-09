@@ -1,5 +1,5 @@
-<testsuite tests='3' results='2' failures='1' disabled='0' errors='0' time='0.836' name='behavior.logging_in'>
-  <testcase classname='behavior.logging_in' name='user can login with correct password' time='0.073' />
+<testsuite tests='3' results='2' failures='1' disabled='0' errors='0' time='0.795' name='behavior.logging_in'>
+  <testcase classname='behavior.logging_in' name='user can login with correct password' time='0.074' />
   <testcase classname='behavior.logging_in' name='user can not login with incorrect password' time='0.024'>
     <failure message='Step "user will not be logged in to system" -- [&gt;, username:, password:, wrong username or password, &gt;] doesn&apos;t contain wrong username odr password'>Step "user will not be logged in to system" -- [&gt;, username:, password:, wrong username or password, &gt;] doesn't contain wrong username odr password
 
@@ -8,5 +8,5 @@
       when a valid username and incorrect password are entered
       then user will not be logged in to system</failure>
   </testcase>
-  <testcase classname='behavior.logging_in' name='nonexistent user can not login to ' time='0.004' />
+  <testcase classname='behavior.logging_in' name='nonexistent user can not login to ' time='0.005' />
 </testsuite>

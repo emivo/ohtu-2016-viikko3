@@ -1,9 +1,10 @@
-#Sun Apr 10 01:31:27 EEST 2016
-/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/UserDao.java=1459459011000
-/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/io/StubIO.java=1460234786000
+#Sun Apr 10 01:35:25 EEST 2016
 /home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/io/ConsoleIO.java=1460234786000
-/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/domain/User.java=1460234786000
-configuration*?=68C7F9996728DC03C6D1C84B3607E1E7D66D6D3D
-/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/InMemoryUserDao.java=1460234786000
 /home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/io/IO.java=1459459011000
+/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/io/StubIO.java=1460234786000
+/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/UserDao.java=1459459011000
+/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/services/AuthenticationService.java=1460241281000
+configuration*?=68C7F9996728DC03C6D1C84B3607E1E7D66D6D3D
 /home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/App.java=1460238149000
+/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/domain/User.java=1460234786000
+/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/InMemoryUserDao.java=1460234786000
