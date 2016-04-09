@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/services/AuthenticationService.java">
+</file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/UserDao.java">
+</file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/InMemoryUserDao.java">
+</file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/domain/User.java">
+</file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/io/IO.java">
+</file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/io/StubIO.java">
+</file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/io/ConsoleIO.java">
+</file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/App.java">
+</file>
+</checkstyle>

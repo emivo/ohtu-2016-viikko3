@@ -1,8 +1,5 @@
 package ohtu;
 
-import ohtu.data_access.InMemoryUserDao;
-import ohtu.data_access.UserDao;
-import ohtu.io.ConsoleIO;
 import ohtu.io.IO;
 import ohtu.services.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,30 +28,39 @@ public class App {
 
     public void run() {
         while (true) {
-            String command = io.readLine(">");
-
-            if (command.isEmpty()) {
-                break;
-            }
-
-            if (command.equals("new")) {
-                String[] usernameAndPasword = ask();
-                if (auth.createUser(usernameAndPasword[0], usernameAndPasword[1])) {
-                    io.print("new user registered");
-                } else {
-                    io.print("new user not registered");
-                }
-
-            } else if (command.equals("login")) {
-                String[] usernameAndPasword = ask();
-                if (auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
-                    io.print("logged in");
-                } else {
-                    io.print("wrong username or password");
-                }
-            }
-
+            if (prompt()) break;
         }
+    }
+
+    private boolean prompt() {
+        String command = io.readLine(">");
+        if (command.equals("new")) {
+            return newRegisteration();
+
+        } else if (command.equals("login")) {
+            return login();
+        }
+        return command.isEmpty();
+    }
+
+    private boolean login() {
+        String[] usernameAndPasword = ask();
+        if (auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
+            io.print("logged in");
+        } else {
+            io.print("wrong username or password");
+        }
+        return false;
+    }
+
+    private boolean newRegisteration() {
+        String[] usernameAndPasword = ask();
+        if (auth.createUser(usernameAndPasword[0], usernameAndPasword[1])) {
+            io.print("new user registered");
+        } else {
+            io.print("new user not registered");
+        }
+        return false;
     }
 
     public static void main(String[] args) {
@@ -63,7 +69,7 @@ public class App {
         App application = ctx.getBean(App.class);
         application.run();
     }
-    
+
     // testejä debugatessa saattaa olla hyödyllistä testata ohjelman ajamista
     // samoin kuin testi tekee, eli injektoimalla käyttäjän syötteen StubIO:n avulla
     //
