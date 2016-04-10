@@ -2,6 +2,8 @@
 <checkstyle version="6.11.2">
 <file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/services/AuthenticationService.java">
 </file>
+<file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/FileUserDao.java">
+</file>
 <file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/UserDao.java">
 </file>
 <file name="/home/emivo/OhTu/viikko3/LoginEasyBv1/src/main/java/ohtu/data_access/InMemoryUserDao.java">

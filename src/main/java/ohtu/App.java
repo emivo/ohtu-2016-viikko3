@@ -1,5 +1,7 @@
 package ohtu;
 
+import ohtu.data_access.FileUserDao;
+import ohtu.io.ConsoleIO;
 import ohtu.io.IO;
 import ohtu.services.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +37,7 @@ public class App {
     private boolean prompt() {
         String command = io.readLine(">");
         if (command.equals("new")) {
-            return newRegisteration();
+            return newRegistration();
 
         } else if (command.equals("login")) {
             return login();
@@ -44,8 +46,8 @@ public class App {
     }
 
     private boolean login() {
-        String[] usernameAndPasword = ask();
-        if (auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
+        String[] usernameAndPassword = ask();
+        if (auth.logIn(usernameAndPassword[0], usernameAndPassword[1])) {
             io.print("logged in");
         } else {
             io.print("wrong username or password");
@@ -53,9 +55,9 @@ public class App {
         return false;
     }
 
-    private boolean newRegisteration() {
-        String[] usernameAndPasword = ask();
-        if (auth.createUser(usernameAndPasword[0], usernameAndPasword[1])) {
+    private boolean newRegistration() {
+        String[] usernameAndPassword = ask();
+        if (auth.createUser(usernameAndPassword[0], usernameAndPassword[1])) {
             io.print("new user registered");
         } else {
             io.print("new user not registered");
@@ -66,7 +68,8 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
 
-        App application = ctx.getBean(App.class);
+        App application = (App) ctx.getBean("app");
+//        App application = new App(new ConsoleIO(), new AuthenticationService(new FileUserDao("salasanat.txt")));
         application.run();
     }
 

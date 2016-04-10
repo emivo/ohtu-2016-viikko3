@@ -1,5 +1,5 @@
-<testsuite tests='3' results='3' failures='0' disabled='0' errors='0' time='0.755' name='behavior.logging_in'>
-  <testcase classname='behavior.logging_in' name='user can login with correct password' time='0.095' />
-  <testcase classname='behavior.logging_in' name='user can not login with incorrect password' time='0.021' />
-  <testcase classname='behavior.logging_in' name='nonexistent user can not login to ' time='0.012' />
+<testsuite tests='3' results='3' failures='0' disabled='0' errors='0' time='1.369' name='behavior.logging_in'>
+  <testcase classname='behavior.logging_in' name='user can login with correct password' time='0.114' />
+  <testcase classname='behavior.logging_in' name='user can not login with incorrect password' time='0.026' />
+  <testcase classname='behavior.logging_in' name='nonexistent user can not login to ' time='0.011' />
 </testsuite>
