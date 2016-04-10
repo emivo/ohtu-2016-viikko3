@@ -1,5 +1,6 @@
-##Retrospektiivi
+#Retrospektiivi
 Retrospektiivi on sprintin jälkeinen keskustelu hetki tiimin kesken missä käydään läpi sprintin onnistumista/etenemistä.
 Retrospektiivillä pyritään poistamaan hyödyttömiä ja turhia asioita ja lisäämään sellaisia mistä on hyötyä.
 Keskustelussa jokainen tiimin jäsen pyrkii kertomaan mikä on mennyt hyvin ja mikä taas ei.
-Tällä tavoin pyritään kehittämään tiimin toimintaan niin, että tulevaisuudessa projektien kulku olisi mahdollisimman mutkatonta.
+Tällä tavoin pyritään kehittämään tiimin toimintaan niin, että tulevaisuudessa projektien kulku olisi mahdollisimman mutkatonta. Erilaisia tapoja on esimerkiksi jaetaan tiimi siten, että osa keskittyy testaukseen, toinen taas vaatimuksiin jne. Tämän jälkeen kirjoitetaan mitä pitäisi aloitaa, mitä lopettaa, mitä tehdä ennemmän ja mitä vähemmän. Lopuksi kaikista esiin tulleista asiosta keskustellaan, jonka jälkeen jotain ehkä voidaan muuttaa seuraavaan sprinttiin. Toinen mahdollinen retrospektiivinen suunnitelma toimii siten, että kaikki kirjoittavat korteille mieleen tulevia asioita sprintistä. Tämän jälkeen kortit jaotellaan taululle osioihin glad, sad ja mad. Tämän jälkeen asiat kootaan läheiset asiat keskenään ja kaikki äänestävät mistä asiata haluavat puhuttavan. Eniten ääniä saaneista asioista keskustellaan ja toivottavasti tästä sitten on hyötyöä jatkossa.
+
